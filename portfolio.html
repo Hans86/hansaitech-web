@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hansaitech 狠賽科技成品展示 — 查看我們為客戶打造的數位解決方案。" />
+  <title>成品展示 — Hansaitech 狠賽科技</title>
+  <link rel="icon" href="./assets/icons/hansaitech_icon.png" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+
+<!-- ── HEADER ── -->
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a href="/" class="brand">
+      <img class="brand-icon" src="./assets/icons/hansaitech_icon.png" alt="Hansaitech icon" />
+      <span class="brand-name">Hansaitech</span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="desktop-nav">
+      <a href="/">首頁</a>
+      <a href="/about">關於我們</a>
+      <a href="/services">服務項目</a>
+      <a href="/portfolio" class="active">成品展示</a>
+      <a href="/contact" class="nav-cta">聯絡我們</a>
+    </nav>
+  </div>
+  <nav class="mobile-nav" id="mobileMenu">
+    <a href="/">首頁</a>
+    <a href="/about">關於我們</a>
+    <a href="/services">服務項目</a>
+    <a href="/portfolio">成品展示</a>
+    <a href="/contact">聯絡我們</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ── PAGE HERO ── -->
+  <section class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="/">首頁</a>
+        <span>/</span>
+        <span>成品展示</span>
+      </div>
+      <div class="section-label" style="justify-content:center;">Our Work</div>
+      <h1>我們的<span class="gradient-text">精選作品</span></h1>
+      <p>從 AI 平台到電商系統，每個專案都是我們對技術品質的承諾。</p>
+    </div>
+  </section>
+
+  <!-- ── FILTER + GRID ── -->
+  <section class="section">
+    <div class="container">
+      <div class="filter-tabs" id="filterTabs">
+        <button class="filter-tab active" data-filter="all">全部</button>
+        <button class="filter-tab" data-filter="web">網頁應用</button>
+        <button class="filter-tab" data-filter="ai">AI / 資料</button>
+        <button class="filter-tab" data-filter="mobile">行動應用</button>
+        <button class="filter-tab" data-filter="erp">企業系統</button>
+      </div>
+
+      <div class="portfolio-grid" id="portfolioGrid">
+
+        <article class="card portfolio-card" data-category="erp ai">
+          <div class="portfolio-thumb" style="background:linear-gradient(135deg,#0f2044,#1a3a6e);">📦</div>
+          <div class="badge badge-blue" style="margin-bottom:0.7rem;">ERP · AI</div>
+          <h3>SmartFlow</h3>
+          <p>企業級 ERP 與 AI 庫存預測平台，整合倉儲、採購與出貨流程，導入 ML 模型降低 30% 庫存成本。</p>
+          <div class="portfolio-tags">
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">TensorFlow</span>
+          </div>
+        </article>
+
+        <article class="card portfolio-card" data-category="web ai">
+          <div class="portfolio-thumb" style="background:linear-gradient(135deg,#0a2a3a,#0e4a5c);">📈</div>
+          <div class="badge badge-cyan" style="margin-bottom:0.7rem;">資料分析</div>
+          <h3>Aura Analytics</h3>
+          <p>即時資料儀表板與趨勢分析系統，支援百萬級資料即時處理，客戶決策速度提升 60%。</p>
+          <div class="portfolio-tags">
+            <span class="tag">Vue.js</span>
+            <span class="tag">Python</span>
+            <span class="tag">BigQuery</span>
+            <span class="tag">Kafka</span>
+          </div>
+        </article>
+
+        <article class="card portfolio-card" data-category="mobile web">
+          <div class="portfolio-thumb" style="background:linear-gradient(135deg,#0f2a18,#1a4a2e);">🛒</div>
+          <div class="badge badge-green" style="margin-bottom:0.7rem;">電商</div>
+          <h3>EcoShop</h3>
+          <p>跨平台電商系統與 AI 推薦演算法整合，App 評分 4.8/5，轉換率提升 45%。</p>
+          <div class="portfolio-tags">
+            <span class="tag">React Native</span>
+            <span class="tag">GraphQL</span>
+            <span class="tag">Redis</span>
+            <span class="tag">ML</span>
+          </div>
+        </article>
+
+        <article class="card portfolio-card" data-category="ai web">
+          <div class="portfolio-thumb" style="background:linear-gradient(135deg,#1a0a3a,#2d0f5c);">🧠</div>
+          <div class="badge badge-blue" style="margin-bottom:0.7rem;">AI 客服</div>
+          <h3>SupportMind</h3>
+          <p>企業 AI 客服系統，整合 GPT-4 與內部知識庫，自動回覆率達 78%，客服成本降低 50%。</p>
+          <div class="portfolio-tags">
+            <span class="tag">OpenAI</span>
+            <span class="tag">Next.js</span>
+            <span class="tag">Pinecone</span>
+            <span class="tag">AWS</span>
+          </div>
+        </article>
+
+        <article class="card portfolio-card" data-category="erp web">
+          <div class="portfolio-thumb" style="background:linear-gradient(135deg,#1a1a0a,#3a3a0e);">🏥</div>
+          <div class="badge badge-cyan" style="margin-bottom:0.7rem;">醫療系統</div>
+          <h3>MediTrack</h3>
+          <p>醫療院所病患管理系統，整合預約排班、電子病歷與藥品管理，符合 HIPAA 資安標準。</p>
+          <div class="portfolio-tags">
+            <span class="tag">React</span>
+            <span class="tag">Java Spring</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Docker</span>
+          </div>
+        </article>
+
+        <article class="card portfolio-card" data-category="mobile ai">
+          <div class="portfolio-thumb" style="background:linear-gradient(135deg,#1a0a0a,#3a1010);">🏋️</div>
+          <div class="badge badge-green" style="margin-bottom:0.7rem;">健身 App</div>
+          <h3>FitGenius</h3>
+          <p>AI 個人健身教練 App，根據用戶體能資料動態生成訓練計畫，月活用戶 2 萬+。</p>
+          <div class="portfolio-tags">
+            <span class="tag">Flutter</span>
+            <span class="tag">Python</span>
+            <span class="tag">Firebase</span>
+            <span class="tag">TensorFlow Lite</span>
+          </div>
+        </article>
+
+        <article class="card portfolio-card" data-category="web">
+          <div class="portfolio-thumb" style="background:linear-gradient(135deg,#0a1a2a,#0e2a3e);">🏢</div>
+          <div class="badge badge-blue" style="margin-bottom:0.7rem;">企業官網</div>
+          <h3>CorpSite Pro</h3>
+          <p>多語系企業形象網站，含 CMS 後台管理、SEO 優化與 Core Web Vitals 滿分效能。</p>
+          <div class="portfolio-tags">
+            <span class="tag">Next.js</span>
+            <span class="tag">Sanity CMS</span>
+            <span class="tag">Vercel</span>
+            <span class="tag">i18n</span>
+          </div>
+        </article>
+
+        <article class="card portfolio-card" data-category="ai web">
+          <div class="portfolio-thumb" style="background:linear-gradient(135deg,#0a2a1a,#0e3a2a);">🔍</div>
+          <div class="badge badge-cyan" style="margin-bottom:0.7rem;">搜尋引擎</div>
+          <h3>SearchSphere</h3>
+          <p>企業內部語意搜尋引擎，使用向量資料庫與 Embedding，讓員工快速找到內部文件。</p>
+          <div class="portfolio-tags">
+            <span class="tag">LangChain</span>
+            <span class="tag">Weaviate</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">Vue</span>
+          </div>
+        </article>
+
+        <article class="card portfolio-card" data-category="mobile">
+          <div class="portfolio-thumb" style="background:linear-gradient(135deg,#1a1a2a,#2a2a4a);">🚗</div>
+          <div class="badge badge-green" style="margin-bottom:0.7rem;">交通 App</div>
+          <h3>RideFlow</h3>
+          <p>共享出行 App，含即時 GPS 追蹤、動態定價演算法與司機/乘客雙端介面。</p>
+          <div class="portfolio-tags">
+            <span class="tag">React Native</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">WebSocket</span>
+            <span class="tag">GCP Maps</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TESTIMONIALS ── -->
+  <section class="section" style="background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-label">客戶心聲</div>
+        <h2>他們這樣說</h2>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;">
+        <article class="card" style="padding:1.8rem;">
+          <p style="color:var(--muted);font-size:0.95rem;line-height:1.75;margin-bottom:1.2rem;">
+            "狠賽科技的團隊不只是在寫程式，他們真的懂業務。交付的 ERP 系統超出我們的預期，
+            上線後庫存準確率從 70% 提升到 98%。"
+          </p>
+          <div style="display:flex;align-items:center;gap:0.8rem;">
+            <div style="width:38px;height:38px;border-radius:50%;background:var(--gradient);display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;font-size:0.85rem;">王</div>
+            <div>
+              <div style="font-weight:700;font-size:0.92rem;">王大明</div>
+              <div style="font-size:0.82rem;color:var(--muted);">CEO, 大明物流股份有限公司</div>
+            </div>
+          </div>
+        </article>
+        <article class="card" style="padding:1.8rem;">
+          <p style="color:var(--muted);font-size:0.95rem;line-height:1.75;margin-bottom:1.2rem;">
+            "他們在 AI 客服系統上的技術能力讓我印象深刻。原本需要 10 個客服人員處理的詢問，
+            現在 AI 自動處理了 78%，讓團隊可以專注在高價值任務上。"
+          </p>
+          <div style="display:flex;align-items:center;gap:0.8rem;">
+            <div style="width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,#06b6d4,#0891b2);display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;font-size:0.85rem;">李</div>
+            <div>
+              <div style="font-weight:700;font-size:0.92rem;">李小芬</div>
+              <div style="font-size:0.82rem;color:var(--muted);">CTO, FutureMart 電商平台</div>
+            </div>
+          </div>
+        </article>
+        <article class="card" style="padding:1.8rem;">
+          <p style="color:var(--muted);font-size:0.95rem;line-height:1.75;margin-bottom:1.2rem;">
+            "從需求確認到上線，整個過程非常透明且專業。每週的進度報告讓我們完全掌握狀況，
+            最終系統品質也非常高。強力推薦！"
+          </p>
+          <div style="display:flex;align-items:center;gap:0.8rem;">
+            <div style="width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,#22c55e,#16a34a);display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;font-size:0.85rem;">陳</div>
+            <div>
+              <div style="font-weight:700;font-size:0.92rem;">陳建志</div>
+              <div style="font-size:0.82rem;color:var(--muted);">VP Engineering, MediCare+</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA ── -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="section-label" style="justify-content:center;">下一個案例</div>
+      <h2>讓您的專案成為<span class="gradient-text">我們的下一個成功案例</span></h2>
+      <p>告訴我們您的想法，我們來把它變成現實。</p>
+      <div style="display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;">
+        <a class="btn btn-primary" href="/contact">開始合作 →</a>
+        <a class="btn btn-outline" href="/services">了解服務</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ── FOOTER ── -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img class="footer-brand-icon" src="./assets/icons/hansaitech_icon.png" alt="Hansaitech icon" />
+          <span class="footer-brand-name">Hansaitech 狠賽科技</span>
+        </div>
+        <p class="footer-desc">專注 AI 導入、客製軟體開發與企業數位轉型，讓技術替您的商業成長加速。</p>
+        <div class="social-links" style="margin-top:1rem;">
+          <a class="social-link" href="#" title="GitHub">GH</a>
+          <a class="social-link" href="#" title="LinkedIn">Li</a>
+          <a class="social-link" href="#" title="Twitter/X">𝕏</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>服務項目</h5>
+        <ul>
+          <li><a href="/services">AI 技術導入</a></li>
+          <li><a href="/services">客製軟體開發</a></li>
+          <li><a href="/services">雲端架構建置</a></li>
+          <li><a href="/services">資料分析平台</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>公司資訊</h5>
+        <ul>
+          <li><a href="/about">關於我們</a></li>
+          <li><a href="/portfolio">成品展示</a></li>
+          <li><a href="/contact">聯絡我們</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>聯絡方式</h5>
+        <ul>
+          <li><a href="mailto:hello@hansaitech.com">hello@hansaitech.com</a></li>
+          <li><a href="https://hansaitech.com">hansaitech.com</a></li>
+          <li style="color:var(--muted);font-size:0.9rem;">週一 – 週五 09:00–18:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span class="year"></span> Hansaitech 狠賽科技. All rights reserved.</span>
+      <span>Powered by 🔥 Innovation</span>
+    </div>
+  </div>
+</footer>
+
+<script src="./js/script.js"></script>
+</body>
+</html>
