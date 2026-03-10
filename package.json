@@ -1,0 +1,21 @@
+{
+  "name": "hansaitech-web",
+  "version": "1.0.0",
+  "description": "Hansaitech 狠賽科技 official website",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node serve.mjs",
+    "lint:html": "htmlhint \"*.html\"",
+    "lint:css": "stylelint \"css/**/*.css\"",
+    "lint": "npm run lint:html && npm run lint:css",
+    "check:links": "linkinator http://localhost:5500 --recurse --skip \"mailto:|https://\" --verbosity error",
+    "ci": "npm run lint"
+  },
+  "devDependencies": {
+    "htmlhint": "^1.1.4",
+    "stylelint": "^16.0.0",
+    "stylelint-config-standard": "^36.0.0",
+    "linkinator": "^6.0.0"
+  }
+}
