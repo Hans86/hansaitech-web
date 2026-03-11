@@ -1,7 +1,6 @@
 name = "hansaitech-web"
-compatibility_date = "2026-03-11"
+main = "src/worker.js"
+compatibility_date = "2026-03-12"
 
-# Static assets served from dist/ (built by npm run build)
-# Deploy command: npx wrangler versions upload --assets=./dist --compatibility-date 2026-03-11
 [assets]
 directory = "./dist"
