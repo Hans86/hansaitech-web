@@ -80,7 +80,7 @@ function clearSessionCookie() {
 // ── Route handlers ─────────────────────────────────────────────
 async function handleLogin(request, env) {
   const secret = env.SESSION_SECRET || "ht-secret-change-in-cloudflare";
-  const passwordHash = env.ADMIN_PASSWORD_HASH || FALLBACK_HASH;
+  const passwordHash = (env.ADMIN_PASSWORD_HASH || FALLBACK_HASH).trim();
 
   const form = await request.formData();
   const username = (form.get("username") || "").trim();
