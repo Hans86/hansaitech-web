@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node serve.mjs",
+    "build": "mkdir -p dist && cp *.html dist/ && cp -r css dist/ && cp -r js dist/ && cp -r assets dist/",
     "lint:html": "htmlhint \"*.html\"",
     "lint:css": "stylelint \"css/**/*.css\"",
     "lint": "npm run lint:html && npm run lint:css",
